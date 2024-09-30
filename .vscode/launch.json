@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Wails: Production WailsBabylon",
+      "type": "go",
+      "request": "launch",
+      "mode": "exec",
+      "program": "${workspaceFolder}/build/bin/wailsbabylon",
+      "preLaunchTask": "build",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Wails: Debug WailsBabylon",
+      "type": "go",
+      "request": "launch",
+      "mode": "exec",
+      "program": "${workspaceFolder}/build/bin/wailsbabylon",
+      "preLaunchTask": "build debug",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Wails: Dev WailsBabylon",
+      "type": "go",
+      "request": "launch",
+      "mode": "exec",
+      "program": "${workspaceFolder}/build/bin/wailsbabylon",
+      "preLaunchTask": "build dev",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
